@@ -9,11 +9,14 @@ package modelisationphase2;
  *
  * @author bk296745
  */
-public class De {
-    private int x;
-    private int y;
-    private int z;
-    
-    private boolean isEdge = false;
-    private boolean isCorner = false;
+class Coordonne {
+    int x;
+    int y;
+    int z;
+
+    public Coordonne(int x, int y, int z) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
+    }
 }
