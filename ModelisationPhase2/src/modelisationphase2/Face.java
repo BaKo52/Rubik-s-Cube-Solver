@@ -9,10 +9,6 @@ package modelisationphase2;
  *
  * @author bk296745
  */
-public class Cubie {
-    Coordonne coord;
-    boolean isEdge;
-    boolean isCorner;
-    Couleur
+public class Face {
     
 }

@@ -10,5 +10,9 @@ package modelisationphase2;
  * @author bk296745
  */
 public class Cube {
-    
+    Face cube[][][];
+
+    public Cube() {
+                  
+    }
 }
