@@ -1,5 +1,3 @@
-package modelisationphase2;
-
 /**
  * Classe permettant de créer un objet facette, est contenu dans une face
  * @author valentinmarguerie
@@ -50,5 +48,13 @@ public class Facette {
      */
     public void setCoordonne(Coordonne coordonne){
         this.coordonne = coordonne;
+    }
+
+    /**
+     * @return Permet de retourner la couleur sous forme de string
+     */
+    @Override
+    public String toString() {
+        return this.colour.toString();
     }
 }

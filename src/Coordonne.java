@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package modelisationphase2;
 
 /**
  * Classe permetant de formaliser l'enregistrement des coordonnées d'une facette
@@ -18,5 +17,17 @@ class Coordonne {
         this.x = x;
         this.y = y;
         this.z = z;
+    }
+
+    public int getX() {
+        return this.x;
+    }
+
+    public int getY(){
+        return this.y;
+    }
+
+    public int getZ(){
+        return this.z;
     }
 }
