@@ -6,7 +6,7 @@
 package modelisationphase2;
 
 /**
- *
+ * Enumeration des couleurs possible d'une face
  * @author bk296745
  */
 public enum Colour {

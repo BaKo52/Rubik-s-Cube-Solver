@@ -6,13 +6,13 @@
 package modelisationphase2;
 
 /**
- *
+ * Classe permetant de formaliser l'enregistrement des coordonnées d'une facette
  * @author bk296745
  */
 class Coordonne {
-    int x;
-    int y;
-    int z;
+    private int x;
+    private int y;
+    private int z;
 
     public Coordonne(int x, int y, int z) {
         this.x = x;

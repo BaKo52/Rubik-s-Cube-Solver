@@ -16,6 +16,7 @@ public class ModelisationPhase2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Cube cube = new Cube(2);
     }
     
 }
