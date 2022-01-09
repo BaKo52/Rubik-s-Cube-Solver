@@ -1,2 +1,4 @@
 # Ignore .idea from IntlliJ
 .idea
+/RubikCubeNetbeans/nbproject/private/
+/RubikCubeNetbeans/build/
