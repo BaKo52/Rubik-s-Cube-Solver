@@ -73,13 +73,13 @@ public class Pocket {
             isClockwise = geneAleatoire.nextBoolean();
             
             switch(faceRotation){
-                case 0 -> rotations.add(new Rotation("UP", isClockwise));
-                case 1 -> rotations.add(new Rotation("DOWN", isClockwise));
-                case 2 -> rotations.add(new Rotation("FRONT", isClockwise));
-                case 3 -> rotations.add(new Rotation("BACK", isClockwise));
-                case 4 -> rotations.add(new Rotation("RIGHT", isClockwise));
-                case 5 -> rotations.add(new Rotation("LEFT", isClockwise));
-                default -> throw(new Exception("scramble : faceRotation < 0 ou faceRotation > 5"));
+                case 0 : rotations.add(new Rotation("UP", isClockwise)); break;
+                case 1 : rotations.add(new Rotation("DOWN", isClockwise)); break;
+                case 2 : rotations.add(new Rotation("FRONT", isClockwise)); break;
+                case 3 : rotations.add(new Rotation("BACK", isClockwise)); break;
+                case 4 : rotations.add(new Rotation("RIGHT", isClockwise)); break;
+                case 5 : rotations.add(new Rotation("LEFT", isClockwise)); break;
+                default : throw(new Exception("scramble : faceRotation < 0 ou faceRotation > 5"));
             }
         }
         
@@ -148,8 +148,8 @@ public class Pocket {
                     
         switch(face){
             //WORK !
-            case "UP" -> {
-                for(int i = 0; i < max; i++){
+            case "UP" :
+                for(int i = 0; i < max; i++) {
                     celleEnTrop = this.cube.get("FRONT").getFacette(0, 0);
                     this.cube.get("FRONT").setFacette(0, 0, this.cube.get("FRONT").getFacette(1, 0));
                     this.cube.get("FRONT").setFacette(1, 0, this.cube.get("RIGHT").getFacette(0, 0));
@@ -160,9 +160,9 @@ public class Pocket {
                     this.cube.get("LEFT").setFacette(0, 0, this.cube.get("LEFT").getFacette(1, 0));
                     this.cube.get("LEFT").setFacette(1, 0, celleEnTrop);
                 }
-            }
+                break;
             //WORK !
-            case "FRONT" -> {
+            case "FRONT" : 
                 for(int i = 0; i < max; i++){
                     celleEnTrop = this.cube.get("DOWN").getFacette(0, 0);
                     this.cube.get("DOWN").setFacette(0, 0, this.cube.get("DOWN").getFacette(1, 0));
@@ -174,9 +174,9 @@ public class Pocket {
                     this.cube.get("LEFT").setFacette(1, 0, this.cube.get("LEFT").getFacette(1, 1));
                     this.cube.get("LEFT").setFacette(1, 1, celleEnTrop);
                 }
-            }
+                break;
             //WORK !
-            case "RIGHT" -> {
+            case "RIGHT" : 
                 for(int i = 0; i < max; i++){
                     celleEnTrop = this.cube.get("FRONT").getFacette(1, 0);
                     this.cube.get("FRONT").setFacette(1, 0, this.cube.get("FRONT").getFacette(1, 1));
@@ -188,9 +188,9 @@ public class Pocket {
                     this.cube.get("UP").setFacette(1, 0, this.cube.get("UP").getFacette(1, 1));
                     this.cube.get("UP").setFacette(1, 1, celleEnTrop);
                 }
-            }
+                break;
             //WORK !
-            case "BACK" -> {
+            case "BACK" : 
                 for(int i = 0; i < max; i++){
                     celleEnTrop = this.cube.get("UP").getFacette(0, 0);
                     this.cube.get("UP").setFacette(0, 0, this.cube.get("UP").getFacette(1, 0));
@@ -202,9 +202,9 @@ public class Pocket {
                     this.cube.get("LEFT").setFacette(0, 1, this.cube.get("LEFT").getFacette(0, 0));
                     this.cube.get("LEFT").setFacette(0, 0, celleEnTrop);
                 }
-            }
+                break;
             //WORK !
-            case "LEFT" -> {
+            case "LEFT" : 
                 for(int i = 0; i < max; i++){
                     celleEnTrop = this.cube.get("FRONT").getFacette(0, 1);
                     this.cube.get("FRONT").setFacette(0, 1, this.cube.get("FRONT").getFacette(0, 0));
@@ -216,9 +216,9 @@ public class Pocket {
                     this.cube.get("DOWN").setFacette(0, 1, this.cube.get("DOWN").getFacette(0, 0));
                     this.cube.get("DOWN").setFacette(0, 0, celleEnTrop);
                 }
-            }
+                break;
             //WORK !
-            case "DOWN" -> {
+            case "DOWN" : 
                 for(int i = 0; i < max; i++){
                     celleEnTrop = this.cube.get("FRONT").getFacette(1, 1);
                     this.cube.get("FRONT").setFacette(1, 1, this.cube.get("FRONT").getFacette(0, 1));
@@ -230,7 +230,7 @@ public class Pocket {
                     this.cube.get("RIGHT").setFacette(1, 1, this.cube.get("RIGHT").getFacette(0, 1));
                     this.cube.get("RIGHT").setFacette(0, 1, celleEnTrop);
                 }
-            }
+                break;
         }
     }
 }

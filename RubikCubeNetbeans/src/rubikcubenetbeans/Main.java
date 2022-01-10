@@ -30,33 +30,33 @@ public class Main {
             
             if(isBigboy){
                 switch(mot){
-                    case "print" -> {
+                    case "print" : 
                         System.out.println(bigboy.toString());
-                    }
-                    case "scramble" -> {
-                        System.out.println("Combien de fois voulez mélanger le cube ? :\n");
+                        break;
+                    case "scramble" : 
+                        System.out.println("Combien de fois voulez mélanger le cube ? :");
                         scramble = Clavier.lireInt();
 
                         bigboy.scramble(scramble);
-                    }
-                    case "solve" -> {
-                        pocket.solve();
-                    }
+                        break;
+                    case "solve" : 
+                        bigboy.solve();
+                        break;
                 }
             }else{
                 switch(mot){
-                    case "print" -> {
+                    case "print" : 
                         System.out.println(pocket.toString());
-                    }
-                    case "scramble" -> {
+                        break;
+                    case "scramble" :
                         System.out.println("Combien de fois voulez mélanger le cube ? :\n");
                         scramble = Clavier.lireInt();
 
                         pocket.scramble(scramble);
-                    }
-                    case "solve" -> {
+                        break;
+                    case "solve" : 
                         pocket.solve();
-                    }
+                        break;
                 }
             }
         }
