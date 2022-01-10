@@ -1,3 +1,5 @@
+package rubikcubenetbeans;
+
 /**
  * Classe permettant de créer un objet facette, est contenu dans une face
  * @author valentinmarguerie

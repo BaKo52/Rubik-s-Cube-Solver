@@ -1,3 +1,5 @@
+package rubikcubenetbeans;
+
 /**
  * Classe gérant une face de pocket cube
  */
@@ -80,11 +82,19 @@ public class Face {
 
         for(int i = 0; i < max; i++){
             for(int j = 0; j < max; j++){
-                res += this.listeFacettes[i][j].toString();
+                res += this.listeFacettes[j][i].toString();
             }
             res += "\n";
         }
 
         return res;
+    }
+    
+    public Facette getFacette(int colonne, int ligne){
+        return this.listeFacettes[colonne][ligne];
+    }
+    
+    public void setFacette(int colonne, int ligne, Facette facette){
+        this.listeFacettes[colonne][ligne] = facette;
     }
 }
